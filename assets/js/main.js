@@ -7,7 +7,7 @@ let head_name_util = () => {
     const NAME = "Abhishek Nagekar"
     name_html = ''
     _.map(NAME).forEach(c => {
-        if(c == ' ') c = '&nbsp;';
+        if(c == ' ') c = '&nbsp;' 
         name_html += `<span class="head-title animated">${c}</span>`
     })
     
