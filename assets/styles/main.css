@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'Marvin Visions';
+  src: url(assets/fonts/MarvinVisions-Bold.woff2) format('woff2'), /* Super Modern Browsers */
+       url(assets/fonts/MarvinVisions-Bold.woff) format('woff'), /* Pretty Modern Browsers */
+}
+
+.head {
+
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(270deg, #20b4b6, #33a6d2, #9259d4);
+  background-size: 600% 600%;
+  
+  -webkit-animation: HeadTransition 30s ease infinite;
+  -moz-animation: HeadTransition 30s ease infinite;
+  animation: HeadTransition 30s ease infinite;
+}
+
+@-webkit-keyframes HeadTransition {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+@-moz-keyframes HeadTransition {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+@keyframes HeadTransition {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.head-title {
+  display: inline-block;
+  transition: color ease-in-out 0.5s;
+  font-size: 4rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.head-title:hover {
+  color: #08fdd8;
+}
+
+.head-name span {
+  font-family: 'Marvin Visions', Arial, Helvetica, sans-serif
+}
+
+.head-punchline {
+  font-family: 'Marvin Visions', Arial, Helvetica, sans-serif
+}
