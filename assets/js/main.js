@@ -28,5 +28,6 @@ let head_name_util = () => {
             $(this).removeClass('infinite rubberBand')
         }, 1000)
     })
-}
 
+    $('#head-title-split').fitText()
+}

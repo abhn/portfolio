@@ -1,0 +1,42 @@
+.semi-transparent-button {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 8px;
+  width: 80%;
+  max-width: 150px;
+  min-width: 120px;
+  background: transparent; /* fallback color for old browsers */
+  border-radius: 2px;
+  color: #08fdd8;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.0s ease-out;
+}
+.semi-transparent-button:hover,
+.semi-transparent-button:focus,
+.semi-transparent-button:active {
+  background: #08fdd8;
+  color: #444;
+  transition: all 0.0s ease-in;
+}
+.semi-transparent:focus {
+  outline: none;
+}
+
+.is-blue {
+  background: #1e348e; /* fallback color for old browsers */
+  background: rgba(30, 52, 142, 0.5);
+}
+.is-blue:hover,
+.is-blue:focus,
+.is-blue:active {
+  background: #1e348e; /* fallback color for old browsers */
+  background: rgb(30, 52, 142);
+  color: #fff;
+}
+
+.with-border {
+  border: 1px solid #08fdd8;
+}

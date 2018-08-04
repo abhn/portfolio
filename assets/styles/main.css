@@ -37,6 +37,7 @@
   font-family: 'Courier New', Courier, monospace;
   text-align: right;
   color: #eadfc1;
+  margin-top: 10px;
 }
 
 .head-buttons {
@@ -67,8 +68,31 @@
   color: #ffd420;
 }
 
+.head-menu-wrap {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 10px;
+  
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 600px) {
   .head-title-split {
     display: block;
+  }
+  
+  .head-title-split {
+    text-align: center;
+  }
+
+  .head-menu-wrap {
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
   }
 }
