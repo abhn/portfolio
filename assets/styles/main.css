@@ -7,12 +7,12 @@
 .head {
 
   color: #fff;
-  width: 100vw;
   height: 100vh;
 
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   background: #444;
 }
@@ -36,21 +36,39 @@
 .head-punchline {
   font-family: 'Courier New', Courier, monospace;
   text-align: right;
-
+  color: #eadfc1;
 }
 
 .head-buttons {
-  margin-top: 30px;
-  width: 100%; 
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .head-icon {
-  font-size: 2rem;
-  margin: 0 10px;
+  font-size: 2rem;  
+  margin: 0 5px;
 }
 
 .head-buttons a {
   color: inherit;
+}
+
+.head-title-split {
+  display: inline-block;
+}
+
+.head-title-split.fname {
+  color: #e74769;
+}
+
+.head-title-split.lname {
+  color: #ffd420;
+}
+
+@media screen and (max-width: 600px) {
+  .head-title-split {
+    display: block;
+  }
 }

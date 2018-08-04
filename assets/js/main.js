@@ -4,14 +4,23 @@ $(document).ready(() => {
 })
 
 let head_name_util = () => {
-    const NAME = "Abhishek Nagekar"
-    name_html = ''
-    _.map(NAME).forEach(c => {
-        if(c == ' ') c = '&nbsp;' 
-        name_html += `<span class="head-title animated">${c}</span>`
+    const F_NAME = "Abhishek"
+    const L_NAME = "\xa0Nagekar"
+
+    f_name_html = ''
+    l_name_html = ''
+    
+    _.map(F_NAME).forEach(c => {
+        f_name_html += `<span class="head-title animated">${c}</span>`
     })
     
-    $('#head-name').html(name_html)
+    _.map(L_NAME).forEach(c => {
+        l_name_html += `<span class="head-title animated">${c}</span>`
+    })
+
+    $('#head-name').html(`
+        <div class="head-title-split fname">${f_name_html}</div><div class="head-title-split lname">${l_name_html}</div>
+    `);
     
     $('.head-title').hover(function() {
         $(this).addClass('infinite rubberBand');
