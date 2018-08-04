@@ -1,6 +1,7 @@
 
 $(document).ready(() => {
     head_name_util()
+    general_utils();
 })
 
 let head_name_util = () => {
@@ -28,6 +29,29 @@ let head_name_util = () => {
             $(this).removeClass('infinite rubberBand')
         }, 1000)
     })
+}
 
-    $('#head-title-split').fitText()
+let print_rubberband_text = (text) => {
+    let ret_val = '';
+    
+    _.map(text).forEach(c => {
+        ret_val += `<span class="bounce-on-hover animated">${c}</span>`
+    })
+
+    return ret_val;
+}
+
+let general_utils = () => {
+    // smooth scrolling for nav links
+    $('.head-menu-wrap a').smoothScroll();
+
+    let about_text = print_rubberband_text('About Me');
+    $('#about-text').html(about_text);
+
+    $('.bounce-on-hover').hover(function() {
+        $(this).addClass('infinite rubberBand');
+        window.setTimeout(() => {
+            $(this).removeClass('infinite rubberBand')
+        }, 1000)
+    })
 }
