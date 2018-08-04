@@ -14,12 +14,12 @@
   align-items: center;
   justify-content: center;
 
-  background: #333;
+  background: #444;
 }
 
 .head-title {
   display: inline-block;
-  transition: color ease-in-out 0.5s;
+  transition: color ease-in-out 0.25s;
   font-size: 4rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -30,10 +30,27 @@
 
 .head-name span {
   font-family: 'Marvin Visions', Arial, Helvetica, sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 .head-punchline {
   font-family: 'Courier New', Courier, monospace;
-  float: right;
+  text-align: right;
+
+}
+
+.head-buttons {
+  margin-top: 30px;
+  width: 100%; 
+  display: flex;
+  justify-content: center;
+}
+
+.head-icon {
+  font-size: 2rem;
+  margin: 0 10px;
+}
+
+.head-buttons a {
+  color: inherit;
 }
