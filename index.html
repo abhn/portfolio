@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="vendor/css/normalize.css"/>
     <link rel="stylesheet" href="vendor/css/animate.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="vendor/css/hint.base.min.css"/>
     <link rel="stylesheet" href="vendor/css/semi-transparent-buttons.css"/>
     <link rel="stylesheet" href="assets/styles/radial-progress.css"/>
@@ -28,8 +29,8 @@
                 <span class="hint--bottom" aria-label="Web Blog">
                     <a href="https://www.nagekar.com"><i class="head-icon fas fa-rss"></i></a>
                 </span>
-                <span class="hint--bottom" aria-label="Email">
-                    <a href="mailto:abhishek@nagekar.com"><i class="head-icon fas fa-at"></i></a>
+                <span class="hint--bottom extra-link" aria-label="Email">
+                    <a href="#extra"><i class="head-icon fas fa-at"></i></a>
                 </span>
                 <!-- <span class="hint--bottom" aria-label="Keybase">
                     <a href="https://keybase.io/abhn"><i class="head-icon fab fa-keybase"></i></a>
@@ -46,18 +47,14 @@
 
     <section class="section about" id="about">
         <div class="section-heading" id="about-text"></div>
-        <p>
+        <p class="paragraph-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget leo sollicitudin, maximus ante sed, rutrum orci. Cras volutpat condimentum massa eu varius. Nullam pretium congue congue. Nulla viverra tempus justo vitae accumsan. Cras ipsum est, faucibus vel augue vel, aliquet malesuada mauris. Ut diam felis, aliquam ut leo ac, faucibus tincidunt nunc. Pellentesque lorem sapien, pulvinar nec ante non, volutpat faucibus odio. Morbi eu vehicula ante, at interdum neque. Praesent dignissim vestibulum urna id euismod. Nulla vel elementum justo, et egestas mauris. Praesent dictum non elit vitae semper. Etiam fermentum quam eu mollis finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse cursus sed est semper finibus. Phasellus erat metus, dapibus at dui eu, facilisis lobortis est. Sed ullamcorper lacus vehicula pulvinar aliquet.
-        </p>
-        <p>
-
-            Cras venenatis augue ante, in euismod enim fermentum eu. Quisque hendrerit elit eget lacus facilisis interdum. Aliquam nunc risus, convallis id ornare nec, malesuada quis turpis. Donec tincidunt rhoncus nisi, nec malesuada lectus aliquam vel. Nunc gravida accumsan eros at condimentum. Cras et est sed lacus blandit ullamcorper vitae vel leo. Proin convallis nisl ut velit ultricies, pharetra finibus massa euismod. 
         </p>
     </section>
 
     <div class="section-wrapper">
         <section class="section skills" id="skills">
-            <div class="section-heading">My Skills</div>
+            <div class="section-heading">Skills</div>
 
             <div class="skills-grid">
                 
@@ -88,7 +85,7 @@
                 <div class="skill-grid-item">
                     <div class="set-size charts-container">
                         <div class="pie-wrapper pie-wrapper--solid progress-65">
-                            <span class="label">Frontend</span>
+                            <span class="label">Web</span>
                         </div>
                     </div>
                 </div>
@@ -96,7 +93,7 @@
                 <div class="skill-grid-item">
                     <div class="set-size charts-container">
                         <div class="pie-wrapper pie-wrapper--solid progress-60">
-                            <span class="label">Backend</span>
+                            <span class="label">Cryptography</span>
                         </div>
                     </div>
                 </div>
@@ -111,35 +108,128 @@
                 
             </div>
             
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget leo sollicitudin, maximus ante sed, rutrum orci. Cras volutpat condimentum massa eu varius. Nullam pretium congue congue. Nulla viverra tempus justo vitae accumsan. Cras ipsum est, faucibus vel augue vel, aliquet malesuada mauris. Ut diam felis, aliquam ut leo ac, faucibus tincidunt nunc. Pellentesque lorem sapien, pulvinar nec ante non, volutpat faucibus odio. Morbi eu vehicula ante, at interdum neque. Praesent dignissim vestibulum urna id euismod. Nulla vel elementum justo, et egestas mauris. Praesent dictum non elit vitae semper. Etiam fermentum quam eu mollis finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse cursus sed est semper finibus. Phasellus erat metus, dapibus at dui eu, facilisis lobortis est. Sed ullamcorper lacus vehicula pulvinar aliquet.
-            </p>
-            <p>
-
-                Cras venenatis augue ante, in euismod enim fermentum eu. Quisque hendrerit elit eget lacus facilisis interdum. Aliquam nunc risus, convallis id ornare nec, malesuada quis turpis. Donec tincidunt rhoncus nisi, nec malesuada lectus aliquam vel. Nunc gravida accumsan eros at condimentum. Cras et est sed lacus blandit ullamcorper vitae vel leo. Proin convallis nisl ut velit ultricies, pharetra finibus massa euismod. 
+            <p class="paragraph-text">
+                I've worked professionally as a <b>fullstack</b> and a <b>frontend engineer</b>. I love working with <b>GNU/Linux</b> based systems, and I'm comfortable working with and writing <b>bash</b>. Being an <b>infosec</b> practitioner, I love applying the domain knowledge in the software that I write to try and create not just 'correct' software, but also secure ones. I love working with <b>cryptography</b> and enabling the possibility of secure communication channels with certain guarantees.
             </p>
 
+            <p class="paragraph-text">
+                I've worked with some technologies, frameworks, tools and services during my time in the software world. While I may not be in touch with each and every one of them, I can pick them up again with relatively less effort. 
+            </p>
+
+            <section class="technologies-grid">
+                    <img class="technologies-grid-item" src="assets/images/postgres-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/cpp-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/mysql-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/linux-logo.jpg" />
+                    <img class="technologies-grid-item" src="assets/images/semanticui-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/metasploit-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/heroku-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/react-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/flask-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/ionic-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/bootstrap-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/javascript-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/haskell-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/kali-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/arch-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/gnu-logo.png" />                 
+                    <img class="technologies-grid-item" src="assets/images/jquery-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/bash-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/django-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/css-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/pouchdb-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/angular-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/python-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/java-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/php-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/c-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/debian-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/xfce-logo.png" />   
+                    <img class="technologies-grid-item" src="assets/images/html-logo.png" />
+                    <img class="technologies-grid-item" src="assets/images/qt-logo.png" />                 
+                    <img class="technologies-grid-item" src="assets/images/wordpress-logo.png" />                 
+                    <img class="technologies-grid-item" src="assets/images/drupal-logo.png" />                 
+                    <img class="technologies-grid-item" src="assets/images/joomla-logo.png" />                 
+                    <img class="technologies-grid-item" src="assets/images/cpanel-logo.png" />                 
+                    <img class="technologies-grid-item" src="assets/images/cloudflare-logo.png" />    
+                    <img class="technologies-grid-item" src="assets/images/github-logo.png" />    
+
+            </section>
         </section>
     </div>
 
 
     <section class="section experience" id="experience">
         <div class="section-heading">Work Experience</div>
+        
+        <div class="experience-title">Frontend Engineer</div>
+        <div class="experience-details">
+            <i>LaughGuru</i><span style="float: right">Sep 2017 - Current</span>
+        </div>
+        <p class="paragraph-text">
+            Build the frontend of the main product plus internal tools. Completely took over product frontend three months in.
+            <ul class="paragraph-text">
+                <li>Build a media heavy interactive PWA towards the product's major revamp</li>
+                <li>
+                    Contributed towards optimizing the web app, made it offline first, aggressive caching with service workers and  brought down the load times by several folds
+                </li>
+            </ul>            
+        </p>
+        <br/><br/>
+        <div class="experience-title">Software Engineering Intern</div>
+        <div class="experience-details">
+            <i>Fourthlion Technologies</i><span style="float: right">Jun 2016 - Nov 2016</span>
+        </div>
+        <p class="paragraph-text">Realized many ideas from on-field teams into apps/mvps that could be demoed
+            <ul class="paragraph-text">
+                <li>Rapid prototyping of ideas from the field teams. Development of hybrid android/iOS applications</li>
+                <li>
+                    DevOps &amp; maintenance of the Django project dashboards used by State officials from Himachal Pradesh Education Board
+                </li>
+            </ul>            
+        </p>
+
     </section>
 
     <div class="section-wrapper">
         <section class="section projects" id="projects">
             <div class="section-heading">Featured Projects</div>
+            <div class="projects-grid">
+
+                <!-- <div class="github-card" data-github="abhn/Marvel" data-width="280" data-height="" data-theme="default"></div>
+
+                <div class="github-card" data-github="abhn/S3Scan" data-width="280" data-height="" data-theme="default"></div>
+
+                <div class="github-card" data-github="abhn/Wall-E" data-width="280" data-height="" data-theme="default"></div>
+
+                <div class="github-card" data-github="abhn/Elementary" data-width="280" data-height="" data-theme="default"></div>
+
+                <div class="github-card" data-github="abhn/Soot-Spirits" data-width="280" data-height="" data-theme="default"></div>
+
+                <div class="github-card" data-github="abhn/Mporter" data-width="280" data-height="" data-theme="default"></div>
+                 -->
+            </div>
         </section>
     </div>
 
     <section class="section extra" id="extra">
         <div class="section-heading">Let's Chat</div>
+        <p class="paragraph-text">
+            I'd love to hear from you! I'm open to collaborations, especially on open source projects. Interesting work opportunity? Would love to hear about that as well. Just want to have a coffee and talk about stars, cars or Pokemon? Awesome. 
+        </p>
+        <p class="paragraph-text">
+            Here's my email address: <a href="mailto:abhishek@nagekar.com">abhishek@nagekar.com</a> (<a href="https://www.nagekar.com/publickey.abhishek@nagekar.com.asc">PGP Key</a>). It may take me a day to get back, but rest assured, you'll hear from me.
+        </p>
     </section>
+
+    <footer class="footer footer-text">
+        Abhishek Nagekar &copy; 2018 | &nbsp; <a href="https://github.com/abhn/portfolio">Free Software</a>
+    </footer>
     
     <script src="/vendor/js/jquery-3.3.1.js"></script>
     <script src="/vendor/js/lodash.min.js"></script>
     <script src="/vendor/js/jquery.smooth-scroll.js"></script>
+    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>

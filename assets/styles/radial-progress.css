@@ -10,6 +10,8 @@
   clear: both;
   content: "";
   display: table;
+  max-width: 150px;
+  max-height: 150px;
 }
 .pie-wrapper {
   height: 1em;
@@ -46,7 +48,7 @@
   color: #fff;
   cursor: default;
   display: block;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   left: 0.4em;
   position: absolute;
   right: 0.4em;

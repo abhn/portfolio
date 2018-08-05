@@ -44,6 +44,7 @@ let print_rubberband_text = (text) => {
 let general_utils = () => {
     // smooth scrolling for nav links
     $('.head-menu-wrap a').smoothScroll();
+    $('.extra-link a').smoothScroll();
 
     let about_text = print_rubberband_text('About Me');
     $('#about-text').html(about_text);
@@ -52,6 +53,13 @@ let general_utils = () => {
         $(this).addClass('infinite rubberBand');
         window.setTimeout(() => {
             $(this).removeClass('infinite rubberBand')
+        }, 1000)
+    })
+
+    $('.skill-grid-item').hover(function() {
+        $(this).addClass('animated infinite pulse');
+        window.setTimeout(() => {
+            $(this).removeClass('animated infinite bounce')
         }, 1000)
     })
 }

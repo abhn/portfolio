@@ -4,6 +4,10 @@
        url('../fonts/MarvinVisions-Bold.woff') format('woff') /* Pretty Modern Browsers */
 }
 
+body {
+  min-width: 360px;
+}
+
 .head {
 
   color: #fff;
@@ -88,7 +92,7 @@
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(160px, 1fr));
-
+  max-width: 100%;
 }
 
 .section {
@@ -109,7 +113,56 @@
 }
 
 .section-wrapper {
-  background-color: #eee;
+  background-color: #F0F0F0;
+}
+
+.paragraph-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  margin: 30px auto;
+}
+
+.skill-grid-item {
+  transition: all 0.1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-grid-item:hover {
+  opacity: 0.7;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-auto-rows: auto;
+  grid-row-gap: 20px;
+  grid-column-gap: 10px;
+  justify-content: space-evenly;
+}
+
+.footer {
+  background-color: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 35px;
+  color: #fff;
+}
+
+.footer-text a {
+  color: inherit;
+}
+
+.technologies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.technologies-grid-item {
+  width: 100px;
+  height: 100px;
 }
 
 /* Here follow all the media queries */
@@ -130,5 +183,17 @@
 
   .skills-grid {
     grid-template-columns: repeat(2, minmax(160px, 1fr));
+  }
+
+  .set-size {
+    font-size: 8em;
+  }
+  .pie-wrapper .label {
+    font-size: 0.9rem;
+    top: 3.5rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: auto;
   }
 }
