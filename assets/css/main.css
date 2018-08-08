@@ -23,7 +23,7 @@ body {
 
 .head-title {
   display: inline-block;
-  transition: color ease-in-out 0.25s;
+  transition: color ease-in-out 0.3s;
   font-size: 4rem;
 }
 
@@ -64,11 +64,13 @@ body {
 }
 
 .head-title-split.fname {
-  color: #e74769;
+  /* color: #eb7991; */
+  color: #96858f;
 }
 
 .head-title-split.lname {
-  color: #ffd420;
+  /* color: #ffd420; */
+  color: #6d7993;
 }
 
 .head-menu-wrap {
@@ -113,7 +115,7 @@ body {
 }
 
 .section-wrapper {
-  background-color: #F0F0F0;
+  background-color: #eee;
 }
 
 .paragraph-text {
@@ -158,18 +160,21 @@ body {
 .technologies-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(96.6666px, 1fr));
+  justify-items: center;
 }
 
 .technologies-grid-item {
   width: 96.6666px;
   height: 96.6666px;
+  background-color: #fff;
 }
 
 .project-card {
   padding: 10px;
+  transition: all ease-in-out 0.3s;
 }
 
-.project-card:nth-child(even) {
+.project-card:hover {
   background-color: #eee;
 }
 
@@ -205,15 +210,16 @@ body {
 
 .blog-item {
   padding: 10px;
+  transition: all ease-in-out 0.3s;
 }
 
-.blog-item:nth-child(odd) {
+.blog-item:hover {
   background-color: #eee;
 }
 
 .blog-title {
   font-size: 1.1rem;
-  font-color: inherit;
+  color: inherit;
 }
 
 .more-blogs {
@@ -225,6 +231,14 @@ body {
   font-size: 0.9rem;
 }
 
+@media screen and (max-width: 850px) {
+  .head-menu-wrap {
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+}
+
 /* Here follow all the media queries */
 @media screen and (max-width: 600px) {
   .head-title-split {
@@ -233,12 +247,6 @@ body {
   
   .head-title-split {
     text-align: center;
-  }
-
-  .head-menu-wrap {
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
   }
 
   .skills-grid {
@@ -255,5 +263,13 @@ body {
   
   .projects-grid {
     grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .head-menu-wrap {
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
   }
 }
