@@ -220,6 +220,11 @@ body {
 .blog-title {
   font-size: 1.1rem;
   color: inherit;
+  transition: all ease-in-out 0.3s;
+}
+
+.blog-title:hover {
+  opacity: 0.7;
 }
 
 .more-blogs {
