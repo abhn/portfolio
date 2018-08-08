@@ -81,6 +81,7 @@ let rss_feeds = () => {
         dateFormat: 'MMMM Do, YYYY',
         effect: 'slideFastSynced',
         error: feed_error,
+        ssl: true,
         layoutTemplate: "<div class='blog-container'>{entries}</div>",
         entryTemplate:`
             <div class="blog-item">
