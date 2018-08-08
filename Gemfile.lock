@@ -56,7 +56,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (~> 3.8.0)
+  jekyll
 
 BUNDLED WITH
    1.16.3
