@@ -98,7 +98,7 @@ body {
 .section {
   max-width: 600px;
   margin: 60px auto;
-  padding: 30px 0;
+  padding: 20px 10px;
 }
 
 .section-heading {
@@ -157,12 +157,12 @@ body {
 
 .technologies-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(96.6666px, 1fr));
 }
 
 .technologies-grid-item {
-  width: 100px;
-  height: 100px;
+  width: 96.6666px;
+  height: 96.6666px;
 }
 
 .project-card {
@@ -219,6 +219,10 @@ body {
 .more-blogs {
   font-size: 1rem;
   margin: 15px 0 20px;
+}
+
+.slightly-smaller-text {
+  font-size: 0.9rem;
 }
 
 /* Here follow all the media queries */

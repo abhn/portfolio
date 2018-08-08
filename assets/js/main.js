@@ -87,7 +87,7 @@ let rss_feeds = () => {
                 <div class="blog-item-title">
                 <a class="blog-title" href="{url}">{title}</a> <small class="post-date">{date}</small>
                 </div>
-                <p class="paragraph-text">
+                <p class="paragraph-text slightly-smaller-text">
                     {shortBodyPlain}
                 </p>
             </div>
