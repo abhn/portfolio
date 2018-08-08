@@ -203,10 +203,6 @@ body {
   color: #fff;
 }
 
-.project-description {
-
-}
-
 .post-date {
   float: right;
 }
@@ -232,6 +228,10 @@ body {
 
 .slightly-smaller-text {
   font-size: 0.9rem;
+}
+
+.extra {
+  margin-bottom: 0px;
 }
 
 @media screen and (max-width: 850px) {
