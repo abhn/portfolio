@@ -4,3 +4,4 @@ github_username: abhn
 
 # Build settings
 markdown: kramdown
+exclude: [vendor/ruby]
