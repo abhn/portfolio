@@ -47,8 +47,23 @@ let general_utils = () => {
     $('.head-menu-wrap a').smoothScroll();
     $('.extra-link a').smoothScroll();
 
-    let about_text = print_rubberband_text('About Me');
+    let about_text = print_rubberband_text('About\xa0Me');
     $('#about-text').html(about_text);
+
+    let professional_experience = print_rubberband_text('Professional\xa0Experience');
+    $('#experience-text').html(professional_experience);
+
+    let featured_projects = print_rubberband_text('Featured\xa0Projects');
+    $('#featured-projects-text').html(featured_projects);
+
+    let skills = print_rubberband_text('Skills');
+    $('#skills-text').html(skills);
+
+    let recent_blog_posts = print_rubberband_text('Recent\xa0Blog\xa0Posts');
+    $('#recent-posts-text').html(recent_blog_posts);
+
+    let chat = print_rubberband_text('Let\s\xa0Chat');
+    $('#chat-text').html(chat);
 
     $('.bounce-on-hover').hover(function() {
         let class_name = 'infinite rubberBand';

@@ -28,7 +28,7 @@ body {
 }
 
 .head-title:hover {
-  color: #08fdd8;
+  color: #89eedf;
 }
 
 .head-name span {
@@ -89,6 +89,7 @@ body {
 .section-heading {
   font-size: 2rem;
   font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 1.5px;
 }
 
 .skills-grid {
@@ -125,7 +126,7 @@ body {
 }
 
 .skill-grid-item {
-  transition: all 0.1s ease-in-out;
+  transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -232,6 +233,15 @@ body {
 
 .extra {
   margin-bottom: 0px;
+}
+
+.bounce-on-hover {
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.bounce-on-hover:hover {
+  color: #89eedf;
 }
 
 @media screen and (max-width: 850px) {
