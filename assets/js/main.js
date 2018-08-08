@@ -2,6 +2,7 @@
 $(document).ready(() => {
     head_name_util()
     general_utils();
+    rss_feeds();
 })
 
 let head_name_util = () => {
@@ -50,16 +51,50 @@ let general_utils = () => {
     $('#about-text').html(about_text);
 
     $('.bounce-on-hover').hover(function() {
-        $(this).addClass('infinite rubberBand');
+        let class_name = 'infinite rubberBand';
+        $(this).addClass(class_name);
         window.setTimeout(() => {
-            $(this).removeClass('infinite rubberBand')
+            $(this).removeClass(class_name)
         }, 1000)
     })
 
     $('.skill-grid-item').hover(function() {
-        $(this).addClass('animated infinite pulse');
+        let class_name = 'animated infinite pulse'
+        $(this).addClass(class_name);
         window.setTimeout(() => {
-            $(this).removeClass('animated infinite bounce')
+            $(this).removeClass(class_name)
         }, 1000)
     })
+
+    $('.technologies-grid-item').hover(function() {
+        let class_name = 'animated infinite flipInY';
+        $(this).addClass(class_name);
+        window.setTimeout(() => {
+            $(this).removeClass(class_name);
+        }, 1000)
+    })
+}
+
+let rss_feeds = () => {
+    $("#rss-feeds").rss("https://www.nagekar.com/feed.xml", {
+        limit: 5,
+        dateFormat: 'MMMM Do, YYYY',
+        effect: 'slideFastSynced',
+        error: feed_error,
+        layoutTemplate: "<div class='blog-container'>{entries}</div>",
+        entryTemplate:`
+            <div class="blog-item">
+                <div class="blog-item-title">
+                <a class="blog-title" href="{url}">{title}</a> <small class="post-date">{date}</small>
+                </div>
+                <p class="paragraph-text">
+                    {shortBodyPlain}
+                </p>
+            </div>
+        `
+    })
+}
+
+let feed_error = () => {
+    $('#blog-posts').remove();
 }

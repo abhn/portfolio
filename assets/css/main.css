@@ -78,7 +78,7 @@ body {
   transform: translate(-50%, 0);
 
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto auto;
   grid-column-gap: 10px;
   
   margin: 0 auto;
@@ -165,6 +165,62 @@ body {
   height: 100px;
 }
 
+.project-card {
+  padding: 10px;
+}
+
+.project-card:nth-child(even) {
+  background-color: #eee;
+}
+
+.project-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  font-family: Arial, sans-serif;
+  margin: 10px 0 20px;
+}
+
+.project-link {
+  margin: 10px 0;
+}
+
+.project-tags {
+  margin: 20px 0;
+}
+
+.project-tag-item {
+  background-color: #444;
+  border-radius: 3px;
+  padding: 5px;
+  color: #fff;
+}
+
+.project-description {
+
+}
+
+.post-date {
+  float: right;
+}
+
+.blog-item {
+  padding: 10px;
+}
+
+.blog-item:nth-child(odd) {
+  background-color: #eee;
+}
+
+.blog-title {
+  font-size: 1.1rem;
+  font-color: inherit;
+}
+
+.more-blogs {
+  font-size: 1rem;
+  margin: 15px 0 20px;
+}
+
 /* Here follow all the media queries */
 @media screen and (max-width: 600px) {
   .head-title-split {
@@ -176,7 +232,7 @@ body {
   }
 
   .head-menu-wrap {
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
   }
@@ -190,7 +246,7 @@ body {
   }
   .pie-wrapper .label {
     font-size: 0.9rem;
-    top: 3.5rem;
+    top: 3rem;
   }
   
   .projects-grid {
