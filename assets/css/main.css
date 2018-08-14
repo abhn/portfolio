@@ -80,7 +80,7 @@ body {
   transform: translate(-50%, 0);
 
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto;
   grid-column-gap: 10px;
   
   margin: 0 auto;
@@ -120,9 +120,13 @@ body {
 }
 
 .paragraph-text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 1.1rem;
   margin: 30px auto;
+}
+
+.pt-sans-font {
+  font-family: 'PT Sans', sans-serif;
 }
 
 .skill-grid-item {
@@ -249,9 +253,22 @@ body {
   color: #89eedf;
 }
 
+.experience-title {
+  font-size: 1.25rem;
+}
+
+.experience-details {
+  font-size: 1.25rem;
+}
+
+.experience-date {
+  float: right;
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 850px) {
   .head-menu-wrap {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
   }

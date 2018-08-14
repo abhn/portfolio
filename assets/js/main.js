@@ -101,7 +101,7 @@ let rss_feeds = () => {
         entryTemplate:`
             <div class="blog-item">
                 <div class="blog-item-title">
-                <a class="blog-title" href="{url}">{title}</a> <small class="post-date">{date}</small>
+                <a class="blog-title pt-sans-font" href="{url}">{title}</a> <small class="post-date">{date}</small>
                 </div>
                 <p class="paragraph-text slightly-smaller-text">
                     {shortBodyPlain}
