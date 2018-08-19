@@ -18,7 +18,7 @@ body {
   justify-content: center;
   position: relative;
 
-  background: #444;
+  background: transparent;
 }
 
 .head-title {
@@ -37,10 +37,12 @@ body {
 }
 
 .head-punchline {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   text-align: right;
-  color: #eadfc1;
+  color: #fff;
   margin-top: 10px;
+  letter-spacing: 2px;
+  font-size: 1.25rem;
 }
 
 .head-buttons {
@@ -65,12 +67,12 @@ body {
 
 .head-title-split.fname {
   /* color: #eb7991; */
-  color: #96858f;
+  color: #fff;
 }
 
 .head-title-split.lname {
   /* color: #ffd420; */
-  color: #6d7993;
+  color: #fff;
 }
 
 .head-menu-wrap {
@@ -266,6 +268,15 @@ body {
   font-size: 1rem;
 }
 
+#nav {
+  background: url(/assets/images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Here follow all the media queries */
 @media screen and (max-width: 850px) {
   .head-menu-wrap {
     grid-template-columns: auto auto;
@@ -274,8 +285,11 @@ body {
   }
 }
 
-/* Here follow all the media queries */
 @media screen and (max-width: 600px) {
+  #nav {
+    background-attachment: unset;
+  }
+
   .head-title-split {
     display: block;
   }
