@@ -185,6 +185,10 @@ body {
   color: #222;
 }
 
+.project-card:hover {
+  background-color: #ccc;
+}
+
 .project-title {
   font-weight: bold;
   font-size: 1.25rem;
