@@ -195,6 +195,15 @@
           transform: rotate(43.2deg);
 }
 
+.pie-wrapper--solid.progress-80 {
+  background: linear-gradient(to right, rgb(62, 170, 203) 50%, #34495e 50%);
+}
+.pie-wrapper--solid.progress-80:before {
+  background: rgb(62, 170, 203) 50%;
+  -webkit-transform: rotate(43.2deg);
+          transform: rotate(43.2deg);
+}
+
 .pie-wrapper--solid.progress-75 {
   background: linear-gradient(to right, #60C5C3 50%, #34495e 50%);
 }
@@ -213,29 +222,20 @@
           transform: rotate(108deg);
 }
 
-.pie-wrapper--solid.progress-65 {
-  background: linear-gradient(to right, #84C541 50%, #34495e 50%);
-}
-.pie-wrapper--solid.progress-65:before {
-  background: #84C541;
-  -webkit-transform: rotate(126deg);
-          transform: rotate(126deg);
-}
-
 .pie-wrapper--solid.progress-60 {
-  background: linear-gradient(to right, #C8DB2D 50%, #34495e 50%);
+  background: linear-gradient(to right, rgb(123, 219, 45) 50%, #34495e 50%);
 }
 .pie-wrapper--solid.progress-60:before {
-  background: #C8DB2D;
+  background: rgb(123, 219, 45) 50%;
   -webkit-transform: rotate(144deg);
           transform: rotate(144deg);
 }
 
 .pie-wrapper--solid.progress-55 {
-  background: linear-gradient(to right, #E7C61C 50%, #34495e 50%);
+  background: linear-gradient(to right, rgb(170, 231, 28) 50%, #34495e 50%);
 }
 .pie-wrapper--solid.progress-55:before {
-  background: #E7C61C;
+  background: rgb(170, 231, 28) 50%;
   -webkit-transform: rotate(165deg);
           transform: rotate(165deg);
 }
