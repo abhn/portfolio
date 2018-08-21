@@ -194,6 +194,9 @@ body {
   font-size: 1.25rem;
   font-family: Arial, sans-serif;
   margin: 10px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .project-link {
@@ -265,6 +268,9 @@ body {
 
 .experience-details {
   font-size: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .experience-date {
