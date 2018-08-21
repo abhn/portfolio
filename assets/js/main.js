@@ -2,7 +2,6 @@
 $(document).ready(() => {
     head_name_util()
     general_utils();
-    rss_feeds();
 })
 
 let head_name_util = () => {
@@ -12,11 +11,11 @@ let head_name_util = () => {
     f_name_html = ''
     l_name_html = ''
     
-    _.map(F_NAME).forEach(c => {
+    $.map(F_NAME.split(''), c => {
         f_name_html += `<span class="head-title animated">${c}</span>`
     })
     
-    _.map(L_NAME).forEach(c => {
+    $.map(L_NAME.split(''), c => {
         l_name_html += `<span class="head-title animated">${c}</span>`
     })
 
@@ -35,7 +34,7 @@ let head_name_util = () => {
 let print_rubberband_text = (text) => {
     let ret_val = '';
     
-    _.map(text).forEach(c => {
+    $.map(text.split(''), c => {
         ret_val += `<span class="bounce-on-hover animated">${c}</span>`
     })
 
@@ -47,8 +46,23 @@ let general_utils = () => {
     $('.head-menu-wrap a').smoothScroll();
     $('.extra-link a').smoothScroll();
 
-    let about_text = print_rubberband_text('About Me');
+    let about_text = print_rubberband_text('About\xa0Me');
     $('#about-text').html(about_text);
+
+    let professional_experience = print_rubberband_text('Professional\xa0Experience');
+    $('#experience-text').html(professional_experience);
+
+    let featured_projects = print_rubberband_text('Featured\xa0Projects');
+    $('#featured-projects-text').html(featured_projects);
+
+    let skills = print_rubberband_text('Skills');
+    $('#skills-text').html(skills);
+
+    let recent_blog_posts = print_rubberband_text('Recent\xa0Blog\xa0Posts');
+    $('#recent-posts-text').html(recent_blog_posts);
+
+    let chat = print_rubberband_text('Let\'s\xa0Chat');
+    $('#chat-text').html(chat);
 
     $('.bounce-on-hover').hover(function() {
         let class_name = 'infinite rubberBand';
@@ -58,43 +72,41 @@ let general_utils = () => {
         }, 1000)
     })
 
-    $('.skill-grid-item').hover(function() {
-        let class_name = 'animated infinite pulse'
-        $(this).addClass(class_name);
-        window.setTimeout(() => {
-            $(this).removeClass(class_name)
-        }, 1000)
-    })
+    // $('.skill-grid-item').hover(function() {
+    //     let class_name = 'animated infinite pulse'
+    //     $(this).addClass(class_name);
+    //     window.setTimeout(() => {
+    //         $(this).removeClass(class_name)
+    //     }, 1000)
+    // })
 
-    $('.technologies-grid-item').hover(function() {
-        let class_name = 'animated infinite flipInY';
-        $(this).addClass(class_name);
-        window.setTimeout(() => {
-            $(this).removeClass(class_name);
-        }, 1000)
-    })
+    // $('.technologies-grid-item').hover(function() {
+    //     let class_name = 'animated infinite flipInY';
+    //     $(this).addClass(class_name);
+    //     window.setTimeout(() => {
+    //         $(this).removeClass(class_name);
+    //     }, 1000)
+    // })
 }
 
-let rss_feeds = () => {
-    $("#rss-feeds").rss("https://www.nagekar.com/feed.xml", {
-        limit: 5,
-        dateFormat: 'MMMM Do, YYYY',
-        effect: 'slideFastSynced',
-        error: feed_error,
-        layoutTemplate: "<div class='blog-container'>{entries}</div>",
-        entryTemplate:`
-            <div class="blog-item">
-                <div class="blog-item-title">
-                <a class="blog-title" href="{url}">{title}</a> <small class="post-date">{date}</small>
-                </div>
-                <p class="paragraph-text slightly-smaller-text">
-                    {shortBodyPlain}
-                </p>
-            </div>
-        `
-    })
-}
+// let rss_feeds = () => {
+//     $("#rss-feeds").rss("https://www.nagekar.com/feed.xml", {
+//         limit: 5,
+//         dateFormat: 'MMMM Do, YYYY',
+//         effect: 'slideFastSynced',
+//         error: feed_error,
+//         ssl: true,
+//         layoutTemplate: "<div class='blog-container'>{entries}</div>",
+//         entryTemplate:`
+//             <div class="blog-item">
+//                 <div class="blog-item-title">
+//                 <a class="blog-title pt-sans-font" href="{url}">{title}</a> <small class="post-date">{date}</small>
+//                 </div>
+//             </div>
+//         `
+//     })
+// }
 
-let feed_error = () => {
-    $('#blog-posts').remove();
-}
+// let feed_error = () => {
+//     $('#blog-posts').remove();
+// }

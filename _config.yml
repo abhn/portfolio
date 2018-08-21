@@ -1,0 +1,7 @@
+title: Abhishek Nagekar
+email: abhishek@nagekar.com
+github_username: abhn
+
+# Build settings
+markdown: kramdown
+exclude: [vendor/ruby]

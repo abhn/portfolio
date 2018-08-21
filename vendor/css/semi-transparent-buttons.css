@@ -11,14 +11,14 @@
   text-align: center;
   text-decoration: none;
   letter-spacing: 1px;
-  transition: all 0.0s ease-out;
+  transition: all 0.1s ease-out;
 }
 .semi-transparent-button:hover,
 .semi-transparent-button:focus,
 .semi-transparent-button:active {
   background: #08fdd8;
   color: #444;
-  transition: all 0.0s ease-in;
+  transition: all 0.1s ease-in;
 }
 .semi-transparent:focus {
   outline: none;
