@@ -157,10 +157,10 @@ body {
   min-height: 35px;
   color: #fff;
 
-  background: url(/assets/images/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: url(/assets/images/background.png);
+  background-repeat: repeat;
+  /* background-size: cover; */
+  /* background-position: center; */
   background-attachment: fixed;
 }
 
@@ -280,11 +280,12 @@ body {
 }
 
 #nav {
-  background: url(/assets/images/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: url(/assets/images/background.png);
+  background-repeat: repeat;
+
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-attachment: fixed; */
 }
 
 /* Here follow all the media queries */
