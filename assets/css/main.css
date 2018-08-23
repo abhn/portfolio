@@ -23,6 +23,23 @@ body {
   font-weight: bold;
 }
 
+.animated {
+  animation: fade-in-down 0.6s;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;    
+}
+
+@keyframes fade-in-down {
+	0% {
+		opacity: 0;
+		transform: translateY(-10px);
+  }
+	100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .head-punchline {
   font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   text-align: right;
