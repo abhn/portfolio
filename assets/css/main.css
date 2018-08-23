@@ -84,6 +84,15 @@ body {
   max-width: 600px;
   margin: 60px auto;
   padding: 20px 10px;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section.skills > div {
+  width: 100%;
 }
 
 .section-heading {
@@ -95,7 +104,7 @@ body {
 }
 
 .nav-links {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
@@ -141,6 +150,7 @@ body {
   align-items: center;
   min-height: 35px;
   color: #fff;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
 
   background: url(/assets/images/background.png);
   background-repeat: repeat;
