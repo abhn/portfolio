@@ -47,20 +47,6 @@ body {
   color: inherit;
 }
 
-.head-title-split {
-  display: inline-block;
-}
-
-.head-title-split.fname {
-  /* color: #eb7991; */
-  color: #fff;
-}
-
-.head-title-split.lname {
-  /* color: #ffd420; */
-  color: #fff;
-}
-
 .head-menu-wrap {
   position: absolute;
   bottom: 40px;
@@ -109,7 +95,7 @@ body {
 }
 
 .section-wrapper {
-  background-color: #eee;
+  background-color: rgb(243, 243, 243);
 }
 
 .paragraph-text {
@@ -130,9 +116,6 @@ body {
   justify-content: center;
 }
 
-.skill-grid-item:hover {
-  opacity: 0.7;
-}
 
 .projects-grid {
   display: grid;
@@ -181,10 +164,6 @@ body {
   color: #222;
 }
 
-.project-card:hover {
-  background-color: #ccc;
-}
-
 .project-title {
   font-weight: bold;
   font-size: 1.25rem;
@@ -222,18 +201,10 @@ body {
   transition: all ease-in-out 0.3s;
 }
 
-.blog-item:hover {
-  background-color: #eee;
-}
-
 .blog-title {
   font-size: 1.1rem;
   color: inherit;
   transition: all ease-in-out 0.3s;
-}
-
-.blog-title:hover {
-  opacity: 0.7;
 }
 
 .more-blogs {
@@ -247,15 +218,6 @@ body {
 
 .extra {
   margin-bottom: 0px;
-}
-
-.bounce-on-hover {
-  display: inline-block;
-  transition: all 0.3s ease-in-out;
-}
-
-.bounce-on-hover:hover {
-  color: #89eedf;
 }
 
 .experience-title {
