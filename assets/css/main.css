@@ -1,9 +1,3 @@
-@font-face {
-  font-family: 'Marvin Visions';
-  src: url('../fonts/MarvinVisions-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/MarvinVisions-Bold.woff') format('woff') /* Pretty Modern Browsers */
-}
-
 body {
   min-width: 360px;
 }
@@ -24,16 +18,9 @@ body {
 .head-title {
   display: inline-block;
   transition: color ease-in-out 0.3s;
-  font-size: 4rem;
-}
-
-.head-title:hover {
-  color: #89eedf;
-}
-
-.head-name span {
-  font-family: 'Marvin Visions', Arial, Helvetica, sans-serif;
-  letter-spacing: 3px;
+  font-size: 3.5rem;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .head-punchline {
@@ -41,7 +28,6 @@ body {
   text-align: right;
   color: #fff;
   margin-top: 10px;
-  letter-spacing: 2px;
   font-size: 1.25rem;
 }
 
@@ -98,19 +84,27 @@ body {
   max-width: 600px;
   margin: 60px auto;
   padding: 20px 10px;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section.skills > div {
+  width: 100%;
 }
 
 .section-heading {
   text-align: center;
   margin-bottom: 30px;
-  font-family: 'Marvin Visions', Arial, Helvetica, sans-serif;
-  letter-spacing: 1.5px;
-  font-size: 2rem;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
   color: #222;
 }
 
 .nav-links {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
@@ -120,9 +114,9 @@ body {
 
 .paragraph-text {
   font-family: 'PT Sans', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin: 30px auto;
-  color: #222;
+  color: #404040;
 }
 
 .pt-sans-font {
@@ -156,11 +150,12 @@ body {
   align-items: center;
   min-height: 35px;
   color: #fff;
+  font-family: 'PT Sans', Arial, Helvetica, sans-serif;
 
-  background: url(/assets/images/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: url(/assets/images/background.png);
+  background-repeat: repeat;
+  /* background-size: cover; */
+  /* background-position: center; */
   background-attachment: fixed;
 }
 
@@ -264,11 +259,11 @@ body {
 }
 
 .experience-title {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
 }
 
 .experience-details {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -276,15 +271,20 @@ body {
 
 .experience-date {
   float: right;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 #nav {
-  background: url(/assets/images/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background: url(/assets/images/background.png);
+  background-repeat: repeat;
+
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-attachment: fixed; */
+}
+
+a {
+  color: #222;
 }
 
 /* Here follow all the media queries */
@@ -302,11 +302,15 @@ body {
     background-attachment: unset;
   }
 
-  .head-title-split {
+  .head-title {
     display: block;
   }
   
-  .head-title-split {
+  .head-title {
+    text-align: center;
+  }
+
+  .head-punchline {
     text-align: center;
   }
 
