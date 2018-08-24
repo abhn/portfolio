@@ -287,6 +287,12 @@ a {
     grid-row-gap: 10px;
     width: 80%;
   }
+
+  .section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -304,11 +310,6 @@ a {
 
   .head-punchline {
     text-align: center;
-  }
-
-  .section {
-    padding-left: 15px;
-    padding-right: 15px;
   }
 
   .skills-grid {
