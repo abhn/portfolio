@@ -116,6 +116,10 @@ body {
   width: 100%;
 }
 
+.skills-subsection {
+  font-size: 1.3rem;
+}
+
 .section-heading {
   text-align: center;
   margin-bottom: 30px;
@@ -292,7 +296,7 @@ a {
     padding-left: 15px;
     padding-right: 15px;
   }
-  
+
 }
 
 @media screen and (max-width: 600px) {
