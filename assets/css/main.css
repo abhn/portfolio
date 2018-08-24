@@ -1,5 +1,6 @@
 body {
   min-width: 360px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .head {
@@ -77,10 +78,18 @@ body {
   margin: 0 auto;
 }
 
+.justify-text {
+  text-align: justify;
+}
+
+.progress-bars {
+  margin-top: 30px;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: 40% 60%;
-  justify-items: center;
+  grid-gap: 20px;
 }
 
 .technical-skills {
