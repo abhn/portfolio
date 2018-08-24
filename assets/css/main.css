@@ -1,5 +1,6 @@
 body {
   min-width: 360px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .head {
@@ -77,16 +78,33 @@ body {
   margin: 0 auto;
 }
 
+.justify-text {
+  text-align: justify;
+}
+
+.progress-bars {
+  margin-top: 30px;
+}
+
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(160px, 1fr));
-  max-width: 100%;
+  grid-template-columns: 40% 60%;
+  grid-gap: 20px;
+}
+
+.technical-skills {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.center-align {
+  text-align: center;
 }
 
 .section {
-  max-width: 600px;
+  max-width: 768px;
   margin: 60px auto;
-  padding: 20px 10px;
+  padding: 20px 0;
   min-height: 100vh;
 
   display: flex;
@@ -96,6 +114,10 @@ body {
 
 .section.skills > div {
   width: 100%;
+}
+
+.skills-subsection {
+  font-size: 1.3rem;
 }
 
 .section-heading {
@@ -113,7 +135,7 @@ body {
 }
 
 .section-wrapper {
-  background-color: rgb(243, 243, 243);
+  background-color: #eef6ff;
 }
 
 .paragraph-text {
@@ -162,12 +184,6 @@ body {
 
 .footer-text a {
   color: inherit;
-}
-
-.technologies-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(96.6666px, 1fr));
-  justify-items: center;
 }
 
 .technologies-grid-item {
@@ -240,6 +256,19 @@ body {
 
 .experience-title {
   font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.profile-pic-div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .experience-details {
@@ -275,6 +304,12 @@ a {
     grid-row-gap: 10px;
     width: 80%;
   }
+
+  .section {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -295,7 +330,8 @@ a {
   }
 
   .skills-grid {
-    grid-template-columns: repeat(2, minmax(160px, 1fr));
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
   }
 
   .set-size {
