@@ -259,6 +259,17 @@ body {
   font-weight: bold;
 }
 
+.profile-pic {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.profile-pic-div {
+  display: flex;
+  justify-content: center;
+}
+
 .experience-details {
   font-size: 1.3rem;
   display: flex;
