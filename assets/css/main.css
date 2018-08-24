@@ -104,7 +104,7 @@ body {
 .section {
   max-width: 768px;
   margin: 60px auto;
-  padding: 20px 10px;
+  padding: 20px 0;
   min-height: 100vh;
 
   display: flex;
@@ -131,7 +131,7 @@ body {
 }
 
 .section-wrapper {
-  background-color: rgb(243, 243, 243);
+  background-color: #eef6ff;
 }
 
 .paragraph-text {
@@ -304,6 +304,11 @@ a {
 
   .head-punchline {
     text-align: center;
+  }
+
+  .section {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .skills-grid {
