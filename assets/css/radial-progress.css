@@ -18,7 +18,7 @@
 	-ms-transition-property:width, background-color;
 	-o-transition-property:width, background-color;
   transition-property:width, background-color;
-  font-family: 'PT Sans', Arial, Helvetica, sans-serif;  
+  font-family: 'PT Sans', sans-serif;  
 }
 
 .skillbar-title {
