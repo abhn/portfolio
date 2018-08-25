@@ -3,6 +3,11 @@ body {
   font-family: 'PT Sans', sans-serif;
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .head {
 
   color: #fff;
@@ -99,6 +104,12 @@ body {
 
 .center-align {
   text-align: center;
+}
+
+.projects-wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
 }
 
 .section {
@@ -344,6 +355,13 @@ a {
   
   .projects-grid {
     grid-template-columns: auto;
+  }
+
+  .projects-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+    justify-content: center;
   }
 }
 
