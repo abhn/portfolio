@@ -58,7 +58,8 @@
 .card__meta time {
 	font-size: 1rem;
 	color: #bbb;
-	margin-left: 0.8rem;
+    margin-left: 0.8rem;
+    float: right;
 }
 
 /* card article */
