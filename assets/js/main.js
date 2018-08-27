@@ -41,16 +41,17 @@ let blog_posts = () => {
 
                     <div class="card__content card__padding">
             
-                        <div class="card__meta">
-                            ${tags ? tags.join(' ') : ''}
-                            <time>${(new Date(post.date_published).toUTCString().slice(0,16))}</time>
-                        </div>
-            
                         <article class="card__article">
                             <h2><a href="${post.url}">${post.title}</a></h2>
             
                             <p>${post.content_text.slice(0, 150)}</p>
                         </article>
+
+                                    
+                        <div class="card__meta">
+                            ${tags ? tags.join(' ') : ''}
+                            <time>${(new Date(post.date_published).toUTCString().slice(0,16))}</time>
+                        </div>
                     </div>
             
                 </div>
