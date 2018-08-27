@@ -35,6 +35,7 @@
 .card {
 	background-color: #fff;
 	margin-bottom: 1.6rem;
+	box-shadow: -4px 8px 16px 0 rgba(0, 0, 0, 0.24);
 }
 
 .card__padding {
@@ -47,7 +48,8 @@
     background-color: #eee;
     width: 100%;
     max-height: 180px;
-    overflow: hidden;
+	overflow: hidden;
+	border-bottom: solid 1px lightgray;
 }
 
 .card__content {
