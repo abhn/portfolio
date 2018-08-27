@@ -63,7 +63,7 @@ let blog_posts = () => {
             </div>
     
             <div class="blog-goto-link">
-                <i class="fa fa-greater-than more-blogs"></i>
+                <i class="fa fa-greater-than"></i>
             </div>
         </div>
         `;

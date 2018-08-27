@@ -87,7 +87,8 @@
 }
 	  
 .blog-link {
-	padding: 0.5rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 	grid-column-start: 1;
 	grid-column-end: 2;
 	border-right: solid 1px lightgray;
@@ -113,6 +114,7 @@
 
 .blog-goto-link i {
 	font-size: 2rem;
+	color: #C0C0C0
 }
 
 .blog-goto-link:hover {

@@ -116,6 +116,10 @@ img {
 
 }
 
+.full-width {
+  width: 600px;
+}
+
 .section {
   max-width: 768px;
   margin: 60px auto;
