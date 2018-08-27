@@ -45,7 +45,7 @@ let blog_posts = () => {
                 </div>
         
                 <div class="blog-goto-link">
-                    <img src="/assets/images/right-open-mini.svg"/>
+                    <img class="blog-arrow" src="/assets/images/right-open-mini.svg"/>
                 </div>
             </div>
             `;
@@ -63,7 +63,7 @@ let blog_posts = () => {
             </div>
     
             <div class="blog-goto-link">
-                <img src="/assets/images/right-open-mini.svg"/>
+                <img class="blog-arrow" src="/assets/images/right-open-mini.svg"/>
             </div>
         </div>
         `;

@@ -133,3 +133,8 @@
 .more-blogs a {
 	color: #fff;
 }
+
+.blog-arrow {
+	width: 16px;
+	height: 58px;
+}
