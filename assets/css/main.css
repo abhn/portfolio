@@ -112,6 +112,10 @@ img {
   grid-gap: 10px;
 }
 
+.blogs-wrapper {
+
+}
+
 .section {
   max-width: 768px;
   margin: 60px auto;
