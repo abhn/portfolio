@@ -118,6 +118,7 @@ img {
 
 .full-width {
   width: 600px;
+  max-width: 100%;
 }
 
 .section {
