@@ -98,8 +98,9 @@
 	text-decoration: none;
 }
 
-.blog-link a:hover {
+.blog-link:hover {
 	opacity: 0.6;
+	cursor: pointer;
 }
 
 .blog-goto-link {
@@ -126,7 +127,7 @@
 }
 
 .more-blogs {
-	background-color: #44749D;
+	background-color: #2980b9;
 	color: #fff;
 }
 

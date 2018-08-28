@@ -1,6 +1,7 @@
 body {
   min-width: 360px;
   font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
 }
 
 img {
@@ -155,7 +156,21 @@ img {
 }
 
 .section-wrapper {
-  background-color: #C6D4E1;
+  /* background-color: #C6D4E1; */
+  background: url(/assets/images/background.png);
+  background-repeat: repeat;
+}
+
+.section-wrapper .section-heading {
+  color: #fff;
+}
+
+.section-wrapper .skills-subsection {
+  color: #fff;
+}
+
+.section-wrapper .paragraph-text {
+  color: #fff;
 }
 
 .paragraph-text {
@@ -197,8 +212,6 @@ img {
 
   background: url(/assets/images/background.png);
   background-repeat: repeat;
-  /* background-size: cover; */
-  /* background-position: center; */
   background-attachment: fixed;
 }
 
@@ -311,10 +324,6 @@ img {
 #nav {
   background: url(/assets/images/background.png);
   background-repeat: repeat;
-
-  /* background-size: cover; */
-  /* background-position: center; */
-  /* background-attachment: fixed; */
 }
 
 a {

@@ -36,7 +36,7 @@ let blog_posts = () => {
             }
 
             let post_template = `
-            <div class="blog-post">
+            <div class="blog-post" onclick="blog_link_click('${post.url}');">
 
                 <div class="blog-link">
         
@@ -54,11 +54,11 @@ let blog_posts = () => {
         }
 
         let post_template = `
-        <div class="blog-post more-blogs">
+        <div class="blog-post more-blogs" onclick="blog_link_click('https://www.nagekar.com');">
 
             <div class="blog-link">
     
-                <h3><a href="https://www.nagekar.com">More Blog Posts At Nagekar.com</a></h3>            
+                <h3><a href="https://www.nagekar.com">Visit the blog for more posts</a></h3>            
 
             </div>
     
@@ -80,4 +80,8 @@ let blog_posts = () => {
             'piano-man.svg'
         ];
     })
+}
+
+let blog_link_click = url => {
+    window.location = url;
 }
