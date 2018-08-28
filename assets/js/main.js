@@ -24,7 +24,7 @@ let blog_posts = () => {
         let posts = data.items;
         let post_html = [];
 
-        for(let i=0; i<4; i++) {
+        for(let i=0; i<6; i++) {
             post = posts[i];
 
             let tags;
@@ -36,39 +36,30 @@ let blog_posts = () => {
             }
 
             let post_template = `
-            <div class="blog-post">
+            <div class="wrapper">
+                <div class="card radius shadowDepth1">
 
-                <div class="blog-link">
-        
-                    <h3><a href="${post.url}">${post.title}</a></h3>            
+                    <div class="card__content card__padding">
+            
+                        <article class="card__article">
+                            <h2><a href="${post.url}">${post.title}</a></h2>
+            
+                            <p>${post.content_text.slice(0, 150)}</p>
+                        </article>
 
-                </div>
-        
-                <div class="blog-goto-link">
-                    <img class="blog-arrow" src="/assets/images/right-open-mini.svg"/>
+                                    
+                        <div class="card__meta">
+                            ${tags ? tags.join(' ') : ''}
+                            <time>${(new Date(post.date_published).toUTCString().slice(0,16))}</time>
+                        </div>
+                    </div>
+            
                 </div>
             </div>
             `;
 
             post_html.push(post_template);
         }
-
-        let post_template = `
-        <div class="blog-post more-blogs">
-
-            <div class="blog-link">
-    
-                <h3><a href="https://www.nagekar.com">More Blog Posts At Nagekar.com</a></h3>            
-
-            </div>
-    
-            <div class="blog-goto-link">
-                <img class="blog-arrow" src="/assets/images/right-open-mini.svg"/>
-            </div>
-        </div>
-        `;
-
-        post_html.push(post_template);
 
         $('#rss-feeds').html(post_html);
 
