@@ -45,8 +45,7 @@ let blog_posts = () => {
 
     let post_html = [];
 
-    for(let i=0; i<5; i++) {
-        post = posts[i];
+    for(let post of posts) {
 
         let tags;
         
