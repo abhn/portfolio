@@ -399,6 +399,12 @@ a {
   }
 }
 
+@media screen and (max-height: 450px) and (max-width: 600px) {
+  .head {
+    min-height: 525px;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .head-menu-wrap {
     grid-template-columns: auto auto;
@@ -407,10 +413,10 @@ a {
   }
 }
 
-@media screen and (max-height: 360px) {
+@media screen and (max-height: 525px) {
 
   .head {
-    min-height: 360px;
+    min-height: 500px;
   }
 
   .head-menu-wrap {
