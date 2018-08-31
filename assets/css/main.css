@@ -152,7 +152,7 @@ img {
 }
 
 .section-wrapper:nth-child(odd) {
-  background: url(/assets/images/background.png);
+  background: url(../images/background.png);
   background-repeat: repeat;
 }
 
@@ -205,7 +205,7 @@ img {
   color: #fff;
   font-family: 'PT Sans', Arial, Helvetica, sans-serif;
 
-  background: url(/assets/images/background.png);
+  background: url(../images/background.png);
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -318,7 +318,7 @@ img {
 }
 
 #nav {
-  background: url(/assets/images/background.png);
+  background: url(../images/background.png);
   background-repeat: repeat;
 }
 
