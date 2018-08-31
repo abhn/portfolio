@@ -12,7 +12,7 @@ img {
 .head {
 
   color: #fff;
-  height: 100vh;
+  min-height: 100vh;
 
   display: flex;
   align-items: center;
@@ -49,7 +49,7 @@ img {
 
 .head-punchline {
   font-family: 'PT Sans', Arial, Helvetica, sans-serif;
-  text-align: right;
+  text-align: center;
   color: #fff;
   margin-top: 10px;
   font-size: 1.25rem;
@@ -113,10 +113,6 @@ img {
   grid-gap: 10px;
 }
 
-.blogs-wrapper {
-
-}
-
 .full-width {
   width: 650px;
   max-width: 100%;
@@ -155,21 +151,20 @@ img {
   font-weight: bold;
 }
 
-.section-wrapper {
-  /* background-color: #C6D4E1; */
-  background: url(/assets/images/background.png);
+.section-wrapper:nth-child(odd) {
+  background: url(../images/background.png);
   background-repeat: repeat;
 }
 
-.section-wrapper .section-heading {
+.section-wrapper:nth-child(odd) .section-heading {
   color: #fff;
 }
 
-.section-wrapper .skills-subsection {
+.section-wrapper:nth-child(odd) .skills-subsection {
   color: #fff;
 }
 
-.section-wrapper .paragraph-text {
+.section-wrapper:nth-child(odd) .paragraph-text {
   color: #fff;
 }
 
@@ -210,7 +205,7 @@ img {
   color: #fff;
   font-family: 'PT Sans', Arial, Helvetica, sans-serif;
 
-  background: url(/assets/images/background.png);
+  background: url(../images/background.png);
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -294,13 +289,14 @@ img {
 
 .profile-pic {
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 170px;
+  height: 170px;
+  border: solid 2px white;
 }
 
 .profile-pic:hover {
   transition: all 0.3s ease;
-  box-shadow: 0 0px 16px 0 rgba(0,0,0,0.18);
+  box-shadow: 0 0px 16px 0 rgba(255,255,255,0.5);
 }
 
 .profile-pic-div {
@@ -322,7 +318,7 @@ img {
 }
 
 #nav {
-  background: url(/assets/images/background.png);
+  background: url(../images/background.png);
   background-repeat: repeat;
 }
 
@@ -330,8 +326,19 @@ a {
   color: #222;
 }
 
+.extra-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
 .head-inner-wrap {
   
+}
+
+.bottom-link {
+  margin: 0 5px;
 }
 
 /* Here follow all the media queries */
@@ -392,6 +399,12 @@ a {
   }
 }
 
+@media screen and (max-height: 450px) and (max-width: 600px) {
+  .head {
+    min-height: 525px;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .head-menu-wrap {
     grid-template-columns: auto auto;
@@ -400,9 +413,10 @@ a {
   }
 }
 
-@media screen and (max-height: 360px) and (max-width: 600px) {
-  .head-punchline {
-    display: none;
+@media screen and (max-height: 525px) {
+
+  .head {
+    min-height: 500px;
   }
 
   .head-menu-wrap {

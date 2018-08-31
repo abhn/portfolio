@@ -9,6 +9,7 @@ let general_utils = () => {
     // smooth scrolling for nav links
     $('.head-menu-wrap a').smoothScroll();
     $('.extra-link a').smoothScroll();
+    $('.profile-pic-link').smoothScroll();
 
     $('.skillbar').each(function(){
 		$(this).find('.skillbar-bar').animate({
@@ -18,47 +19,49 @@ let general_utils = () => {
 }
 
 let blog_posts = () => {
-    fetch('https://www.nagekar.com/feed.json')
-    .then(data => data.json())
-    .then(data => {
-        let posts = data.items;
-        let post_html = [];
 
-        for(let i=0; i<4; i++) {
-            post = posts[i];
+    // keeping it static, can be fetched from a blog dynamically as well
+    let posts = [
+        {
+            url: 'https://www.nagekar.com/2017/02/trip-to-bramhatal-uttarakhand.html',
+            title: 'Trek To Bramhatal (Uttarakhand)',
+        },
+        {
+            url: 'https://www.nagekar.com/2017/08/privacy.html',
+            title: 'Privacy - How I Converted',
+        },
+        {
+            url: 'https://www.nagekar.com/2018/01/jagriti-yatra.html',
+            title: 'Jagriti Yatra 2017',
+        },
+        {
+            url: 'https://www.nagekar.com/2017/08/private-cloud-part-2.html',
+            title: 'Private Cloud Part 2 | Encrypted Storage With NextCloud',
+        },
+        {
+            url: 'https://www.nagekar.com/2018/07/eli5-how-https-works.html',
+            title: 'ELI5 - How HTTPS Works',
+        },
+    ];
 
-            let tags;
-            
-            if(post.tags) {
-                tags = post.tags.map(tag => {
-                    return `<a href="https://www.nagekar.com/tags#${tag}">${tag}</a>`
-                })
-            }
+    let post_html = [];
 
-            let post_template = `
-            <div class="blog-post" onclick="blog_link_click('${post.url}');">
+    for(let post of posts) {
 
-                <div class="blog-link">
+        let tags;
         
-                    <h3><a href="${post.url}">${post.title}</a></h3>            
-
-                </div>
-        
-                <div class="blog-goto-link">
-                    <img class="blog-arrow" src="/assets/images/right-open-mini.svg"/>
-                </div>
-            </div>
-            `;
-
-            post_html.push(post_template);
+        if(post.tags) {
+            tags = post.tags.map(tag => {
+                return `<a href="https://www.nagekar.com/tags#${tag}">${tag}</a>`
+            })
         }
 
         let post_template = `
-        <div class="blog-post more-blogs" onclick="blog_link_click('https://www.nagekar.com');">
+        <div class="blog-post" onclick="blog_link_click('${post.url}');">
 
             <div class="blog-link">
     
-                <h3><a href="https://www.nagekar.com">Visit the blog for more posts</a></h3>            
+                <h3><a href="${post.url}">${post.title}</a></h3>            
 
             </div>
     
@@ -69,17 +72,28 @@ let blog_posts = () => {
         `;
 
         post_html.push(post_template);
+    }
 
-        $('#rss-feeds').html(post_html);
+    // for the more posts link
+    let post_template = `
+    <div class="blog-post more-blogs" onclick="blog_link_click('https://www.nagekar.com');">
 
-        let bg_imgs = [
-            'death-star.svg',
-            'dominos.svg',
-            'hideout.svg',
-            'jupiter.svg',
-            'piano-man.svg'
-        ];
-    })
+        <div class="blog-link">
+
+            <h3><a href="https://www.nagekar.com">Visit the blog for more posts</a></h3>            
+
+        </div>
+
+        <div class="blog-goto-link">
+            <img class="blog-arrow" src="/assets/images/right-open-mini.svg"/>
+        </div>
+    </div>
+    `;
+
+    post_html.push(post_template);
+
+    $('#rss-feeds').html(post_html);
+
 }
 
 let blog_link_click = url => {
