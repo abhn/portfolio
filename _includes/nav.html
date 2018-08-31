@@ -2,21 +2,10 @@
 <section class="head" id="nav">
     <div class="head-inner-wrap">
         <div class="profile-pic-div animated">
-            <img src="{{ site.profile_picture }}" class="profile-pic"/>
+            <a href="#about" class="profile-pic-link"><img src="{{ site.profile_picture }}" class="profile-pic"/></a>
         </div>
         <div class="head-name head-title animated" id="head-name">{{ site.title }}</div>
         <div class="head-punchline animated">{{ site.description }}</div>
-        <!-- <div class="head-buttons">
-            <span class="hint--bottom" aria-label="Github">
-                <a href="https://github.com/{{ site.github_username }}"><i class="head-icon fab fa-github"></i></a>
-            </span>
-            <span class="hint--bottom" aria-label="Web Blog">
-                <a href="{{ site.blog_url }}"><i class="head-icon fas fa-rss"></i></a>
-            </span>
-            <span class="hint--bottom extra-link" aria-label="Email">
-                <a href="#extra"><i class="head-icon fas fa-envelope"></i></a>
-            </span>
-        </div> -->
         <div class="head-menu-wrap">
             <a class="semi-transparent-button with-border nav-links" href="#about">ABOUT</a>
             <a class="semi-transparent-button with-border nav-links" href="#skills">SKILLS</a>
