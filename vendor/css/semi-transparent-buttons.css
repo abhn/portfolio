@@ -38,3 +38,15 @@
 .with-border {
   border: 1px solid #fff;
 }
+
+.white-button {
+  color: #222;
+  border: 1px solid #222;
+  min-width: 110px;
+}
+
+.white-button:hover {
+  color: #fff;
+  background: #222;
+  cursor: pointer;
+}
