@@ -240,6 +240,15 @@ let render_projects = (slug) => {
             description: "Host a local cloud server with a Raspberry Pi and a spare hard disk. Access data instantaneously on any device on the network.",
             categories: ['diy']
         },
+        {
+            image: 'assets/images/koalamate.png',
+            link: 'https://github.com/abhn/koalamate',
+            title: 'Koalamate',
+            demo: false,
+            technologies: ['Electron', 'Javascript'],
+            description: "A cross-platform desktop application that serves as a Wolfram Alpha query place and notes taker.",
+            categories: ['native']
+        },
     ]
     console.log(projects_obj.filter(project => project.categories.includes(slug)));
     let projects = [];
@@ -272,13 +281,13 @@ let project_mapper = project => {
                     <article class="card__article">
                         <h2><a href="${project.link}">${project.title}</a></h2>
         
-                        <p>${project.description} ${project.demo ? `<a href="${project.demo}">Demo</a>` : ''}</p>
+                        <p class="paragraph-text-normal">${project.description} ${project.demo ? `<a href="${project.demo}">Demo</a>` : ''}</p>
                     </article>
 
                                 
                     <div class="card__meta">
                         ${project.technologies.map(tech =>
-                            `<span class="project-technology">${tech}</span>`
+                            `<span class="project-technology paragraph-text-normal">${tech}</span>`
                         ).join('')}
                     </div>
 
