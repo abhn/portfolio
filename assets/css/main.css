@@ -175,6 +175,11 @@ img {
   color: #404040;
 }
 
+.paragraph-text-normal {
+  font-family: 'PT Sans', sans-serif;
+  color: #404040;
+}
+
 .pt-sans-font {
   font-family: 'PT Sans', sans-serif;
 }
