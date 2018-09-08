@@ -50,3 +50,9 @@
   background: #222;
   cursor: pointer;
 }
+
+.white-button-hover {
+  color: #fff;
+  background: #222;
+  cursor: pointer;
+}
