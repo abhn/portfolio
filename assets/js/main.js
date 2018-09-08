@@ -2,7 +2,6 @@
 $(document).ready(() => {
     general_utils();
     blog_posts();
-    render_projects('featured');
 })
 
 
