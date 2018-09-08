@@ -5,7 +5,7 @@ $(document).ready(() => {
 
 let render_projects = (slug) => {
     let projects_area = $('.projects-wrapper');
-    
+
     $('.white-button').removeClass('white-button-hover');
     $(`#${slug}`).addClass('white-button-hover');
 
@@ -175,7 +175,7 @@ let project_mapper = project => {
                 ${project.image ? 
                     `<div class="card__image border-tlr-radius">
                         <a href="${project.link}">
-                            <img src="${project.image}" alt="image" class="border-tlr-radius">
+                            <img src="${project.image}" alt="image" id="project-image" class="border-tlr-radius">
                         </a>
                     </div>`           
                 : ''}
