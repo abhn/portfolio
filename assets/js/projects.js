@@ -155,7 +155,7 @@ let render_projects = (slug) => {
             categories: ['native']
         },
     ]
-    console.log(projects_obj.filter(project => project.categories.includes(slug)));
+
     let projects = [];
     if(slug == 'all') {
         projects = projects_obj.map(project_mapper);
