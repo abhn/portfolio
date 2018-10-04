@@ -1,11 +1,11 @@
 
-$(document).ready(() => {
+$(document).ready(function() {
     general_utils();
     blog_posts();
 })
 
 
-let general_utils = () => {
+function general_utils() {
     // smooth scrolling for nav links
     $('.head-menu-wrap a').smoothScroll();
     $('.extra-link a').smoothScroll();
@@ -14,11 +14,11 @@ let general_utils = () => {
     $('.skillbar').each(function(){
 		$(this).find('.skillbar-bar').animate({
 			width: $(this).attr('data-percent')
-		}, 3000);
+		}, 1000);
 	});
 }
 
-let blog_posts = () => {
+function blog_posts() {
 
     // keeping it static, can be fetched from a blog dynamically as well
     let posts = [
@@ -96,6 +96,6 @@ let blog_posts = () => {
 
 }
 
-let blog_link_click = url => {
+function blog_link_click(url) {
     window.location = url;
 }
