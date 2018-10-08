@@ -525,8 +525,8 @@ a {
   .skills-grid {
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 50% 50%;
-        grid-template-rows: 50% 50%;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
   }
 
   .set-size {
