@@ -1,22 +1,14 @@
-<div class="section-wrapper">
-    <section class="section projects" id="projects">
-        <div class="full-width">
-            <div class="section-heading" id="featured-projects-text">Projects</div>
-            
-                <div class="project-technologies">
-
-                    <a id="featured" class="semi-transparent-button with-border white-button" onclick="selected('featured')">Featured</a>
-                    <a id="all" class="semi-transparent-button with-border white-button" onclick="selected('all')">All</a>
-                    <a id="webdev" class="semi-transparent-button with-border white-button" onclick="selected('webdev')">WebDev</a>
-                    <a id="native" class="semi-transparent-button with-border white-button" onclick="selected('native')">Native</a>
-                    <a id="security" class="semi-transparent-button with-border white-button" onclick="selected('security')">Security</a>
-                    <a id="diy" class="semi-transparent-button with-border white-button" onclick="selected('diy')">DIY</a>
-
-                </div>
-
-            <div class="projects-wrapper">
-            <!-- filled in by js -->
-            </div>
-        </div>
-    </section>
-</div>
+<section>
+    <h3>Projects</h3>
+    
+    <div>
+        <a id="featured" onclick="selected('featured')">Featured</a>
+        <a id="all" onclick="selected('all')">All</a>
+        <a id="webdev" onclick="selected('webdev')">WebDev</a>
+        <a id="native" onclick="selected('native')">Native</a>
+        <a id="security" onclick="selected('security')">Security</a>
+        <a id="diy" onclick="selected('diy')">DIY</a>
+    </div>
+    
+    <div id="projects-wrapper"></div>
+</section>

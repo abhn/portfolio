@@ -1,13 +1,5 @@
-$(document).ready(() => {
-    render_projects('featured');
-})
-
-
-let render_projects = (slug) => {
-    let projects_area = $('.projects-wrapper');
-
-    $('.white-button').removeClass('white-button-hover');
-    $(`#${slug}`).addClass('white-button-hover');
+function render_projects (slug) {
+    let projects_area = document.getElementById('projects-wrapper');
 
     let projects_obj = [
         {
@@ -163,10 +155,10 @@ let render_projects = (slug) => {
     else {
         projects = projects_obj.filter(project => project.categories.includes(slug)).map(project_mapper);
     }
-    projects_area.hide().html(projects).fadeIn();
+    projects_area.innerHTML = projects;
 }
 
-let project_mapper = project => {
+function project_mapper(project) {
     return `
         <div class="wrapper">
                 
@@ -202,6 +194,12 @@ let project_mapper = project => {
     `
 }
 
-let selected = (slug) => {
+function selected(slug) {
     render_projects(slug);
 }
+
+// IIFE as a replacement for $(document).ready
+(function(){
+    render_projects('featured');
+})();
+
