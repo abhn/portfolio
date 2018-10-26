@@ -160,9 +160,9 @@ function render_projects (slug) {
 
 function project_mapper(project) {
     return `
-        <div class="wrapper">
+        <div class="project-card">
                 
-            <div class="card radius shadowDepth1">
+            <div class="card">
 
                 ${project.image ? 
                     `<div class="card__image border-tlr-radius">
