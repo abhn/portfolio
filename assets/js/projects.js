@@ -1,5 +1,5 @@
 function render_projects (slug) {
-    let projects_area = document.getElementById('projects-wrapper');
+    let projects_area = document.getElementById('project-wrapper');
 
     let projects_obj = [
         {
@@ -153,7 +153,11 @@ function render_projects (slug) {
         projects = projects_obj.map(project_mapper);
     } 
     else {
-        projects = projects_obj.filter(project => project.categories.includes(slug)).map(project_mapper);
+        projects = projects_obj
+                    .filter(project => project.categories
+                    .includes(slug))
+                    .map(project_mapper)
+                    .join('');
     }
     projects_area.innerHTML = projects;
 }
@@ -170,7 +174,7 @@ function project_mapper(project) {
                             <img src="${project.image}" alt="image" id="project-image" class="border-tlr-radius">
                         </a>
                     </div>`           
-                : ''}
+                : `<div></div>`}
 
         
                 <div class="card__content card__padding">
@@ -178,7 +182,7 @@ function project_mapper(project) {
                     <article class="card__article">
                         <h2><a href="${project.link}">${project.title}</a></h2>
         
-                        <p class="paragraph-text-normal">${project.description} ${project.demo ? `<a href="${project.demo}">Demo</a>` : ''}</p>
+                        <p class="paragraph-text-normal">${project.description} ${project.demo ? `<a href="${project.demo}">Demo</a>` : `<div></div>`}</p>
                     </article>
 
                                 
