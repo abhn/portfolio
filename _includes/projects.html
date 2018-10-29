@@ -1,22 +1,15 @@
-<div class="section-wrapper">
-    <section class="section projects" id="projects">
-        <div class="full-width">
-            <div class="section-heading" id="featured-projects-text">Projects</div>
-            
-                <div class="project-technologies">
-
-                    <a id="featured" class="semi-transparent-button with-border white-button" onclick="selected('featured')">Featured</a>
-                    <a id="all" class="semi-transparent-button with-border white-button" onclick="selected('all')">All</a>
-                    <a id="webdev" class="semi-transparent-button with-border white-button" onclick="selected('webdev')">WebDev</a>
-                    <a id="native" class="semi-transparent-button with-border white-button" onclick="selected('native')">Native</a>
-                    <a id="security" class="semi-transparent-button with-border white-button" onclick="selected('security')">Security</a>
-                    <a id="diy" class="semi-transparent-button with-border white-button" onclick="selected('diy')">DIY</a>
-
-                </div>
-
-            <div class="projects-wrapper">
-            <!-- filled in by js -->
-            </div>
-        </div>
-    </section>
-</div>
+<section class="section-div">
+    <a name="projects"></a>
+    <h3 class="section-title">Featured Projects</h3>
+    
+    <div class="project-links">
+        <a href="javascript:null" class="project-link" id="featured" onclick="selected('featured')">Featured</a>
+        <a href="javascript:null" class="project-link" id="all" onclick="selected('all')">All</a>
+        <a href="javascript:null" class="project-link" id="webdev" onclick="selected('webdev')">WebDev</a>
+        <a href="javascript:null" class="project-link" id="native" onclick="selected('native')">Native</a>
+        <a href="javascript:null" class="project-link" id="security" onclick="selected('security')">Security</a>
+        <a href="javascript:null" class="project-link" id="diy" onclick="selected('diy')">DIY</a>
+    </div>
+    <br/>
+    <div id="project-wrapper"></div>
+</section>
