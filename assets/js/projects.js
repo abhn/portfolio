@@ -150,14 +150,12 @@ function render_projects (slug) {
 
     let projects = [];
     if(slug == 'all') {
-        projects = projects_obj.map(project_mapper);
+        projects = projects_obj.map(project_mapper).join('');
     } 
     else {
         projects = projects_obj
-                    .filter(project => project.categories
-                    .includes(slug))
-                    .map(project_mapper)
-                    .join('');
+                    .filter(project => project.categories.includes(slug))
+                    .map(project_mapper).join('');
     }
     projects_area.innerHTML = projects;
 }
@@ -169,26 +167,26 @@ function project_mapper(project) {
             <div class="card">
 
                 ${project.image ? 
-                    `<div class="card__image border-tlr-radius">
+                    `<div class="card-image-div">
                         <a href="${project.link}">
-                            <img src="${project.image}" alt="image" id="project-image" class="border-tlr-radius">
+                            <img src="${project.image}" alt="image" id="project-image" class="card-image">
                         </a>
                     </div>`           
                 : `<div></div>`}
 
         
-                <div class="card__content card__padding">
+                <div class="card-content">
         
-                    <article class="card__article">
-                        <h2><a href="${project.link}">${project.title}</a></h2>
+                    <article class="card-article">
+                        <h4><a href="${project.link}">${project.title}</a></h4>
         
-                        <p class="paragraph-text-normal">${project.description} ${project.demo ? `<a href="${project.demo}">Demo</a>` : `<div></div>`}</p>
+                        <p>${project.description} ${project.demo ? `<a href="${project.demo}">Demo</a>` : `<div></div>`}</p>
                     </article>
 
                                 
-                    <div class="card__meta">
+                    <div class="card-meta">
                         ${project.technologies.map(tech =>
-                            `<span class="project-technology paragraph-text-normal">${tech}</span>`
+                            `<span class="project-technology">${tech}</span>`
                         ).join('')}
                     </div>
 
